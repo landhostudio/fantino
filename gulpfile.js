@@ -4,6 +4,7 @@
 
 var source       = './src',
     destination  = './dist',
+    browserSyncPort = 8010,
     AUTOPREFIXER_BROWSERS = {
       browsers: [
         'last 3 versions',
@@ -96,7 +97,7 @@ gulp.task('watch', function() {
     server: {
       baseDir: destination
     },
-    port: 8001,
+    port: browserSyncPort,
     notify: false,
     ghostMode: {
       clicks: false,
