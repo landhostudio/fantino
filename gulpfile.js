@@ -28,9 +28,7 @@ var sass         = require('gulp-sass'),
     combineMq    = require('gulp-combine-mq'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano      = require('gulp-cssnano'),
-    csscomb      = require('gulp-csscomb'),
-    bourbon      = require('node-bourbon').includePaths,
-    neat         = require('node-neat').includePaths;
+    csscomb      = require('gulp-csscomb');
 
 // JavaScripts -----------------------------------------------------------------
 
@@ -52,8 +50,6 @@ var browserSync  = require('browser-sync').create(),
 gulp.task('stylesheets', function() {
   gulp.src(source + '/stylesheets/**/*.{scss,sass}')
     .pipe(sass({
-      includePaths: bourbon,
-      includePaths: neat,
       precision: 6
     }).on('error', sass.logError))
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
