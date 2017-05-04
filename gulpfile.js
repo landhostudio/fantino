@@ -74,6 +74,7 @@ gulp.task('scripts', function() {
 gulp.task('pug', function() {
   return gulp.src(source + '/**/*.pug')
     .pipe(pug())
+  return gulp.src(source + '/**/!(_)*.pug')
     .pipe(gulp.dest(destination))
     .pipe(browserSync.stream());
 });
