@@ -3,6 +3,13 @@ doctype html
 html.no-js(lang='it')
   include pug/_head.pug
   body
-    h1 Horoman Starter
-    script(src="./js/vendor.js")
-    script(src="./js/main.js")
+    div.app
+      header.header(role='banner')
+        h1.header-title #{title}
+      main(role='main')
+
+        :markdown-it
+          *Fantino* è un single denso che contribuisce col proprio marchio di fabbrica.
+          Un lavoro che presenta la passione per le macchine e i giovani underground di Roma che guarda all’elettronica britannica.
+    script(src='./js/vendor.js')
+    script(src='./js/main.js')
