@@ -1,13 +1,10 @@
 {
-  "name": "horoman-starter",
-  "description": "Starter for the new quick front-end project’s",
+  "name": "fantino",
+  "description": "Official website for Capibara’s “Fantino” single",
   "version": "1.0.0",
   "author": "Roman Horokhovatskyy",
-  "license": "MIT",
+  "license": "Land Ho – Copyright",
   "private": true,
-  "keywords": [
-    "starter-kit"
-  ],
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",

@@ -1,6 +1,6 @@
 {
-  "name": "horoman-starter",
-  "description": "Starter for the new quick front-end project’s",
+  "name": "fantino",
+  "description": "Official website for Capibara’s “Fantino” single",
   "authors": "Roman Horokhovatskyy",
   "private": true,
   "dependencies": {
@@ -12,8 +12,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "keywords": [
-    "starter-kit"
   ]
 }

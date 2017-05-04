@@ -1,6 +1,6 @@
-# Horoman Starter
+# Fantino
 
-Starter for the new quick front-end project’s
+Official website for Capibara’s “Fantino” single
 
 ## Install
 
@@ -13,4 +13,4 @@ Starter for the new quick front-end project’s
 
 ## License
 
-MIT
+This theme is copyrighted. Non autorizated modification (any of modification of the source code inside this theme folder) of this theme is strongly prohibited.
