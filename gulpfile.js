@@ -39,7 +39,8 @@ var include      = require('gulp-include'),
 
 // Pug -------------------------------------------------------------------------
 
-var pug          = require('gulp-pug');
+var pug          = require('gulp-pug'),
+    md           = require('jstransformer-markdown-it');
 
 // BrowserSync -----------------------------------------------------------------
 
@@ -72,9 +73,10 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('pug', function() {
-  return gulp.src(source + '/**/*.pug')
-    .pipe(pug())
   return gulp.src(source + '/**/!(_)*.pug')
+    .pipe(pug({
+      filters: md
+    }))
     .pipe(gulp.dest(destination))
     .pipe(browserSync.stream());
 });
