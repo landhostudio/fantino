@@ -1,0 +1,16 @@
+# Horoman Starter
+
+Starter for the new quick front-end project’s
+
+## Install
+
+1. Install [gulp](http://gulpjs.com)
+2. Install [bower](https://bower.io/)
+3. Navigate to the theme directory, then run `npm install` to download all the workflow automation development dependencies
+4. Run `bower install` to download all the front-end dependencies
+5. Build project assets running `gulp`
+6. Open watch server with run `gulp watch`
+
+## License
+
+MIT

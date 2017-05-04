@@ -1,0 +1,19 @@
+{
+  "name": "horoman-starter",
+  "description": "Starter for the new quick front-end project’s",
+  "authors": "Roman Horokhovatskyy",
+  "private": true,
+  "dependencies": {
+    "fastclick": "^1.0.6"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "starter-kit"
+  ]
+}

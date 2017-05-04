@@ -1,0 +1,29 @@
+{
+  "name": "horoman-starter",
+  "description": "Starter for the new quick front-end project’s",
+  "version": "1.0.0",
+  "author": "Roman Horokhovatskyy",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "starter-kit"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-flatten": "^0.3.1",
+    "gulp-include": "^2.3.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
+    "run-sequence": "^1.2.2",
+    "webpack-stream": "^3.2.0"
+  }
+}
