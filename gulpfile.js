@@ -69,7 +69,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('pug', function() {
-  return gulp.src(source + '/**/!(_)*.pug')
+  return gulp.src(source + '/pug/**/!(_)*.pug')
     .pipe(pug({
       filters: md
     }))
