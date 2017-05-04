@@ -92,6 +92,13 @@ gulp.task('fonts', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('models', function() {
+  return gulp.src(source + '/models/**/*')
+    .pipe(flatten())
+    .pipe(gulp.dest(destination + '/models'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('watch', function() {
   browserSync.init({
     server: {
@@ -114,6 +121,7 @@ gulp.task('watch', function() {
   gulp.watch(source + '/scripts/**/*.js', ['scripts']);
   gulp.watch(source + '/**/*.pug', ['pug']);
   gulp.watch(source + '/webfonts/**/*', ['fonts']);
+  gulp.watch(source + '/models/**/*', ['models']);
   gulp.watch(source + '/images/**/*', ['images']);
   gulp.watch(['build']);
 });
@@ -123,7 +131,7 @@ gulp.task('clear', function(done) {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clear', 'stylesheets', 'scripts', 'pug', 'images', 'fonts', callback);
+  runSequence('clear', 'stylesheets', 'scripts', 'pug', 'images', 'fonts', 'models', callback);
 });
 
 gulp.task('default', function() {
