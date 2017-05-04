@@ -2,8 +2,7 @@
 
 // Project ---------------------------------------------------------------------
 
-var url          = 'http://horomanstarter.dev/',
-    source       = './src',
+var source       = './src',
     destination  = './dist',
     AUTOPREFIXER_BROWSERS = {
       browsers: [
