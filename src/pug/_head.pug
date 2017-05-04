@@ -1,24 +1,25 @@
-head
-  meta(charset='utf-8')
-  meta(http-equiv='x-ua-compatible' content='ie=edge')
+block head
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
 
-  title #{title}
+    title #{page} · #{title}
 
-  meta(name='description' content=description)
-  meta(name='viewport' content='width=device-width, initial-scale=1')
-  meta(name='theme-color' content=themeColor)
+    meta(name='description' content=description)
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='theme-color' content=themeColor)
 
-  //- Facebook
-  meta(property='og:title' content=title)
-  meta(property='og:description' content=description)
-  meta(property='og:image' content=url+thumbnail)
-  meta(property='og:url' content=url)
-  meta(property='fb:app_id' content=facebookID)
+    //- Facebook
+    meta(property='og:title' content=title)
+    meta(property='og:description' content=description)
+    meta(property='og:image' content=url+thumbnail)
+    meta(property='og:url' content=url)
+    meta(property='fb:app_id' content=facebookID)
 
-  //- Twitter
-  meta(name='twitter:title' content=title)
-  meta(name='twitter:description' content=description)
-  meta(name='twitter:image' content=url+thumbnail)
-  meta(name='twitter:card' content='summary_large_image')
+    //- Twitter
+    meta(name='twitter:title' content=title)
+    meta(name='twitter:description' content=description)
+    meta(name='twitter:image' content=url+thumbnail)
+    meta(name='twitter:card' content='summary_large_image')
 
-  link(rel='stylesheet' href='./css/main.css')
+    link(rel='stylesheet' href='/css/main.css')

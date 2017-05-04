@@ -1,0 +1,10 @@
+include _vars
+doctype html
+html.no-js(lang='it')
+  include _head
+  body
+    include _header
+    include _navigation
+    block content
+    script(src='/js/vendor.js')
+    script(src='/js/main.js')

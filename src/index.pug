@@ -1,20 +1,8 @@
-include pug/_vars.pug
-doctype html
-html.no-js(lang='it')
-  include pug/_head.pug
-  body
-    div.app
-      header.header(role='banner')
-        h1.header-title #{title}
-      nav.nav(role='navigation')
-        a.nav-link(href='#') Video
-        a.nav-link(href='#') About
-        a.nav-link(href='#') Bonus
-        a.nav-link(href='#') Spotify
-      main(role='main')
-
-        :markdown-it
-          *Fantino* è un single denso che contribuisce col proprio marchio di fabbrica.
-          Un lavoro che presenta la passione per le macchine e i giovani underground di Roma che guarda all’elettronica britannica.
-    script(src='./js/vendor.js')
-    script(src='./js/main.js')
+extends pug/_layout
+block prepend head
+  - var page = 'Home'
+block content
+  - var page = 'Home'
+  main.main(role='main')
+    h2 #{page}
+    // canvas
