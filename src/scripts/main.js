@@ -61,7 +61,7 @@
         if (window.innerWidth > 768) {
           camera.position.z = 50;
         } else {
-          camera.position.z = 100;
+          camera.position.z = 75;
         };
 
         // Scene ---------------------------------------------------------------
@@ -137,7 +137,7 @@
           if (window.innerWidth > 768) {
             camera.position.z = 50;
           } else {
-            camera.position.z = 100;
+            camera.position.z = 75;
           };
           
           renderer.setSize(window.innerWidth, window.innerHeight);
