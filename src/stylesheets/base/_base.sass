@@ -8,8 +8,18 @@ body
   color: $color-2
 
 img
+  display: block
   width: 100%
   height: auto
+  box-shadow: ($padding / 6) ($padding / 6) 0 $color-3
+
+  @include media($sm-min)
+    box-shadow: ($padding / 3) ($padding / 3) 0 $color-3
+    margin-bottom: $padding / 1.5
+  
+  @include media($md-min)
+    box-shadow: ($padding / 2) ($padding / 2) 0 $color-3
+    margin-bottom: $padding
 
 svg
   max-height: 100%
