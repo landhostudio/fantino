@@ -52,3 +52,32 @@
   &--half
     flex-basis: 50%
     max-width: 50%
+
+.share-button
+  position: absolute
+  top: $padding / 3
+  right: 0
+  display: flex
+  text-align: center
+  white-space: nowrap
+  padding: 0 ($padding / 1.5) 0 ($padding / 3)
+  background-color: $color-2
+  background-image: none
+  height: rem-calc(48)
+  color: $color-3
+  border: none
+  border-radius: $padding
+  vertical-align: middle
+  cursor: pointer
+  user-select: none
+  touch-action: manipulation
+  line-height: rem-calc(48)
+  box-sizing: content-box
+  outline: 0
+  z-index: 3
+  transform: scale(0.75)
+  transform-origin: top right
+
+  @include media($sm-min)
+    top: $padding / 2
+    transform: scale(1)

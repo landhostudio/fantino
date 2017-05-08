@@ -1,1 +1,80 @@
 .video
+  
+  &-play
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    z-index: 1
+
+  &-button
+    display: inline-block
+    text-align: center
+    white-space: nowrap
+    padding: 0
+    background-color: transparent
+    background-image: none
+    height: rem-calc(96)
+    width: rem-calc(96)
+    color: $color-3
+    border: none
+    border-radius: 50%
+    vertical-align: middle
+    cursor: pointer
+    user-select: none
+    touch-action: manipulation
+    line-height: rem-calc(96)
+    box-sizing: content-box
+    outline: 0
+
+    @include media($sm-min)
+      height: rem-calc(144)
+      width: rem-calc(144)
+      line-height: rem-calc(144)
+
+    svg
+      height: rem-calc(96)
+      width: rem-calc(96)
+      
+      @include media($sm-min)
+        height: rem-calc(144)
+        width: rem-calc(144)
+  
+  &-embed
+    position: relative
+    display: block
+    height: 0
+    padding: 0
+    overflow: hidden
+    padding-bottom: per-width(16,9)
+    background-color: $color-3
+    box-shadow: ($padding / 6) ($padding / 6) 0 $color-3
+
+    @include media($sm-min)
+      box-shadow: ($padding / 3) ($padding / 3) 0 $color-3
+      margin-bottom: $padding / 1.5
+
+    @include media($md-min)
+      box-shadow: ($padding / 2) ($padding / 2) 0 $color-3
+      margin-bottom: $padding
+
+    iframe
+      position: absolute
+      width: 100%
+      height: 100%
+      border: 0
+
+    &--opened
+      .video-play
+        display: none
+      img
+        display: none
+
+  .row
+    height: 100vh
+
+  img
+    margin-top: 0
+    box-shadow: none

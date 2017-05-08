@@ -5,9 +5,16 @@ block content
   include ../components/_nav-back
   - var page = 'Video'
   main#main(role='main')
-    h2 #{page}
-    // youtube iframe
     h2.hidden #{page}
     .container
       .row.row--middle
         .column.column--auto
+          a.share-button(href='')
+            include ../../images/share.svg
+            span Condividi
+          .video-embed
+            .video-play
+              button.video-button(type='button' data-youtube='r-Nw7HbaeWY')
+                span.hidden Riproduci
+                include ../../images/play.svg
+            img(src='/img/video.jpg' alt='')
