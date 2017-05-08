@@ -5,5 +5,8 @@ block content
   include ../components/_nav-back
   - var page = 'Spotify'
   main#main(role='main')
-    h2 #{page}
-    // spotify iframe or button + text
+    h2.hidden #{page}
+    .container
+      .row.row--middle
+        .column.column--auto
+          // spotify iframe or button + text
