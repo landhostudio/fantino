@@ -2,7 +2,13 @@ extends ../_layout
 block prepend head
   - var page = 'About'
 block content
+  include ../components/_nav-back
   - var page = 'About'
-  main.main(role='main')
-    h2 #{page}
-    // 2 columns
+  main#main(role='main')
+    h2.hidden #{page}
+    .container
+      .row
+        .column.column--auto
+          p Fantino è un single denso che contribuisce col proprio marchio di fabbrica. Un lavoro che presenta la passione per le macchine e i giovani underground di Roma che guarda all’elettronica britannica.
+        .column.column--auto
+          p Fa elettronica dal 2007, dopo produzioni dance e nu disco si fregia di collaborazioni e remix per artisti italiani tra cui Meg, M+A, Go Dugong, Crema e molti altri.

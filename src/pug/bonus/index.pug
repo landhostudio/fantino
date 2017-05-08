@@ -2,7 +2,8 @@ extends ../_layout
 block prepend head
   - var page = 'Bonus'
 block content
+  include ../components/_nav-back
   - var page = 'Bonus'
-  main.main(role='main')
+  main#main(role='main')
     h2 #{page}
     // figures mixins

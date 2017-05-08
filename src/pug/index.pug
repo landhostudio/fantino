@@ -2,7 +2,11 @@ extends _layout
 block prepend head
   - var page = 'Home'
 block content
+  include components/_nav
   - var page = 'Home'
-  main.main(role='main')
-    h2 #{page}
-    // canvas
+  main(role='main')
+    h2.hidden #{page}
+    .container
+      .row
+        .column.column--auto
+    #canvas

@@ -2,7 +2,8 @@ extends ../_layout
 block prepend head
   - var page = 'Spotify'
 block content
+  include ../components/_nav-back
   - var page = 'Spotify'
-  main.main(role='main')
+  main#main(role='main')
     h2 #{page}
     // spotify iframe or button + text
