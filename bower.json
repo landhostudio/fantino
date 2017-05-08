@@ -5,8 +5,9 @@
   "private": true,
   "dependencies": {
     "fastclick": "^1.0.6",
-    "normalize-scss": "^3.0.3"
+    "normalize-scss": "^3.0.3",
     "jquery": "^3.2.1",
+    "three.js": "threejs#*"
   },
   "ignore": [
     "**/.*",
