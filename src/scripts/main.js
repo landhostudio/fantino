@@ -141,10 +141,6 @@
           };
           
           renderer.setSize(window.innerWidth, window.innerHeight);
-          
-          // if (window.innerWidth > 768) { console.log('768'); };
-          // if (window.innerWidth === 1024) { console.log('1024'); };
-          // if (window.innerWidth === 1280) { console.log('1280'); };
 
         };
 
@@ -188,18 +184,8 @@
           x += 90;
           y += 90;
 
-          // Show coordinates values in the DOM
-
-          // htmlX = document.querySelector('.x');
-          // htmlY = document.querySelector('.y');
-          //
-          // htmlX.innerHTML = 'X: ' + x + '\n';
-          // htmlY.innerHTML = 'Y: ' + y;
-          //
-          // deviceX = event.gamma;
-          // deviceY = event.beta;
-          //
-          // console.log('X: ' + deviceX + ', Y: ' + deviceY);
+          deviceX = event.gamma;
+          deviceY = event.beta;
 
         };
 
@@ -212,14 +198,6 @@
 
       requestAnimationFrame(animate);
       render();
-
-      // Basic animations ------------------------------------------------------
-
-      // mesh.rotation.x += 0.01;
-      // mesh.rotation.y += 0.02;
-      
-      // object.rotation.x += 0.01;
-      // object.rotation.y += 0.02;
 
     }
 
