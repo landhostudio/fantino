@@ -8,5 +8,16 @@ block content
     h2.hidden #{page}
     .container
       .row.row--middle
-        .column.column--auto
-          // figures mixins
+
+        mixin image(src,link)
+          .column.column--half
+            img(src=src alt='')
+            a.share-button(href='http://www.facebook.com/sharer/sharer.php?u=https://giphy.com/gifs/' + link, target='_blank')
+              include ../../images/share.svg
+              span Condividi
+
+        +image('/img/bonus-1.gif', 'ww9yN6mPpxT68')
+        +image('/img/bonus-2.gif', 'aWQ1vs0IxRQ9q')
+        +image('/img/bonus-3.gif', 'nqQnJIuCSZMcw')
+        +image('/img/bonus-4.gif', 'aQkxES85fdLXi')
+        +image('/img/bonus-5.gif', 'AeUsXC4jloc2A')
