@@ -9,12 +9,13 @@ block content
     .container
       .row.row--middle
         .column.column--auto
-          a.share-button(href='')
+          - var video = 'r-Nw7HbaeWY'
+          a.share-button(href='http://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/embed/' + video, target='_blank')
             include ../../images/share.svg
             span Condividi
           .video-embed
             .video-play
-              button.video-button(type='button' data-youtube='r-Nw7HbaeWY')
+              button.video-button(type='button' data-youtube=video)
                 span.hidden Riproduci
                 include ../../images/play.svg
             img(src='/img/video.jpg' alt='')
