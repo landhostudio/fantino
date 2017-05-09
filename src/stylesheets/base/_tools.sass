@@ -84,3 +84,11 @@
   @include media($sm-min)
     top: $padding / 2
     transform: scale(1)
+
+  svg
+    transition: transform 250ms
+
+  &:hover,
+  &:focus
+    svg
+      transform: scale(1.1)

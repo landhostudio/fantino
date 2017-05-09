@@ -97,6 +97,9 @@
     @include media($sm-min)
       display: none
 
+    svg
+      transition: transform 250ms
+
     .hamburger
       @include media(max-width $sm-max)
         display: block
@@ -126,3 +129,8 @@
       @include media($md-min)
         top: $padding
         left: $padding
+
+    &:hover,
+    &:focus
+      svg
+        transform: scale(1.125)
