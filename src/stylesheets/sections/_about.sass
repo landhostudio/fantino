@@ -1,4 +1,9 @@
 .about
+
+  .container
+    @include media(max-width $sm-max)
+      padding-top: $padding + $padding / 3
+
   .row
     @include media($sm-min)
       height: 100vh
