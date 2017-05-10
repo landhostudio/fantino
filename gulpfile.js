@@ -123,9 +123,9 @@ gulp.task('watch', function() {
   gulp.watch(source + '/stylesheets/**/*.{scss,sass}', ['stylesheets']);
   gulp.watch(source + '/scripts/**/*.js', ['scripts']);
   gulp.watch(source + '/**/*.pug', ['pug']);
+  gulp.watch(source + '/images/**/*', ['images']);
   gulp.watch(source + '/webfonts/**/*', ['fonts']);
   gulp.watch(source + '/models/**/*', ['models']);
-  gulp.watch(source + '/images/**/*', ['images']);
   gulp.watch(['build']);
 });
 
