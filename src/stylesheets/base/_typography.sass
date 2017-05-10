@@ -4,6 +4,12 @@ html
   line-height: $font-line-height-1
   -webkit-font-smoothing: antialiased
 
+body
+  @include media($xl-min)
+    font-size: 112.5%
+  @include media($xxl-min)
+    font-size: 125%
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
