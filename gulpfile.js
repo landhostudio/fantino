@@ -20,7 +20,8 @@ var source       = './src',
 var gulp         = require('gulp'),
     cache        = require('gulp-cache'),
     runSequence  = require('run-sequence'),
-    flatten      = require('gulp-flatten');
+    flatten      = require('gulp-flatten'),
+    rename       = require('gulp-rename');
 
 // Stylesheets -----------------------------------------------------------------
 
@@ -102,6 +103,20 @@ gulp.task('models', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('sitemap', function() {
+  return gulp.src(source + '/pug/_sitemap.pug')
+    .pipe(pug({
+      pretty: true,
+      debug: false
+    }))
+    .pipe(rename({
+        basename: 'sitemap',
+        extname: '.xml'
+    }))
+    .pipe(gulp.dest(destination))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('files', function() {
   return gulp.src(source + '/*.{txt}')
     .pipe(flatten())
@@ -132,6 +147,7 @@ gulp.task('watch', function() {
   gulp.watch(source + '/images/**/*', ['images']);
   gulp.watch(source + '/webfonts/**/*', ['fonts']);
   gulp.watch(source + '/models/**/*', ['models']);
+  gulp.watch(source + '/pug/_sitemap.pug', ['sitemap']);
   gulp.watch(source + '/*.{txt}', ['files']);
   gulp.watch(['build']);
 });
