@@ -10,8 +10,10 @@
   min-height: 100vh
   margin-left: auto
   margin-right: auto
-  padding-left: $padding / 3
-  padding-right: $padding / 3
+
+  @include media($sm-min)
+    padding-left: $padding / 3
+    padding-right: $padding / 3
 
   @include media($md-min)
     padding-left: $padding
@@ -36,10 +38,6 @@
   flex-direction: row
   flex-wrap: wrap
   width: 100%
-
-  @include media(max-width $sm-max)
-    margin-left: - $padding / 3
-    margin-right: - $padding / 3
 
   &--middle
     align-items: center
