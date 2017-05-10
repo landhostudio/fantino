@@ -1,0 +1,18 @@
+doctype xml
+urlset(xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1')
+
+  mixin page(loc,lastmod,changefreq,priority)
+    url
+      //- full url
+      loc #{loc}
+      //- year-mouth-day
+      lastmod #{lastmod}
+      //- hourly | daily | weekly | monthly | yearly | never
+      changefreq #{changefreq}
+      //- importance
+      priority #{priority}
+
+  +page('http://fantino.landhostudio.com/', '2017-05-10', 'yearly', '1.0')
+  +page('http://fantino.landhostudio.com/video/', '2017-05-10', 'yearly', '0.8')
+  +page('http://fantino.landhostudio.com/bonus/', '2017-05-10', 'yearly', '0.8')
+  +page('http://fantino.landhostudio.com/about/', '2017-05-10', 'yearly', '0.8')
