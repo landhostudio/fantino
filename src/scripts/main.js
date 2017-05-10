@@ -19,7 +19,7 @@
   };
 
   function startNav() {
-    $('.nav-button').click(function(event) {
+    $('.button--nav').click(function(event) {
       $(this).toggleClass('nav-button--opened');
       $('.nav').toggleClass('nav--opened');
     });
@@ -229,7 +229,7 @@
 
   function startYouTube() {
 
-    $('.video-button').click(function () {
+    $('.button--play').click(function () {
       var id = $(this).attr('data-youtube');
       var src = 'https://www.youtube.com/embed/' + id + '?rel=0&amp;showinfo=0;autoplay=1';
       var iframe = '<iframe width="1280" height="720" src="'+src+'" frameborder="0" allowfullscreen></iframe>';

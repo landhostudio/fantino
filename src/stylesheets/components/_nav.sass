@@ -70,6 +70,38 @@
         bottom: $padding
         right: $padding
 
+  .button--nav
+    position: fixed
+    top: $padding / 3
+    left: $padding / 3
+    background-color: $color-3
+    color: $color-2
+    z-index: 99
+
+    @include media($sm-min)
+      display: none
+
+    .hamburger
+      @include media(max-width $sm-max)
+        display: block
+
+    .close
+      @include media(max-width $sm-max)
+        display: none
+
+    &--opened
+      @include media(max-width $sm-max)
+        background-color: $color-2
+        color: $color-3
+
+      .hamburger
+        @include media(max-width $sm-max)
+          display: none
+
+      .close
+        @include media(max-width $sm-max)
+          display: block
+
   &-button
     position: fixed
     top: $padding / 3

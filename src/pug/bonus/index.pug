@@ -12,7 +12,7 @@ block content
         mixin image(src,link)
           .column.column--half
             img(src=src alt='')
-            a.share-button(href='http://www.facebook.com/sharer/sharer.php?u=https://giphy.com/gifs/' + link, target='_blank')
+            a.button.button--share(href='http://www.facebook.com/sharer/sharer.php?u=https://giphy.com/gifs/' + link, target='_blank')
               include ../../images/share.svg
               span Condividi
 
