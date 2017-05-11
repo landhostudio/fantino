@@ -185,11 +185,11 @@
           if (x < -90) { x = -90};
           
           // To make computation easier we shift the range of x and y to [0,180]
-          x += 90;
-          y += 90;
+          x += -45;
+          y += 0;
 
-          deviceX = event.gamma;
-          deviceY = event.beta;
+          deviceX = y;
+          deviceY = x;
 
         };
 
