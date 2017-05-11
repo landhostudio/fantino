@@ -185,8 +185,13 @@
           if (x < -90) { x = -90};
           
           // To make computation easier we shift the range of x and y to [0,180]
-          x += -45;
-          y += 0;
+          if (window.innerWidth > 768) {
+            x += 0;
+            y += 0;
+          } else {
+            x += -45;
+            y += 0;
+          };
 
           deviceX = y;
           deviceY = x;
