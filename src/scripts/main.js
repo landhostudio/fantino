@@ -176,8 +176,11 @@
 
         function deviceOrientationEvent(event) {
 
-          deviceX = event.gamma;
-          deviceY = event.beta;
+          var deviceXvalue = Math.round(event.beta),  // In degree in the range [-180,180]
+              deviceYvalue = Math.round(event.gamma); // In degree in the range [-90,90]
+
+          deviceY = deviceXvalue;
+          deviceX = deviceYvalue * -1;
 
         };
 
@@ -202,8 +205,9 @@
     	camera.position.y += ((mouseY / 6) - camera.position.y) * .05;
 
       // Move camera with device coordinates -----------------------------------
-      camera.position.x += deviceX * .025;
-    	camera.position.y += deviceY * .0125;
+
+      camera.position.x += deviceX * .025; // va bene
+    	camera.position.y += deviceY * .0125; // falla al contrario
 
       // Camera look to object -------------------------------------------------
       camera.lookAt(scene.position);
