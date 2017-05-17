@@ -9,3 +9,5 @@ bower_components
 .bower-tmp
 
 .sass-cache
+
+dploy.yaml

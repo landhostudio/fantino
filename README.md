@@ -10,6 +10,8 @@ Official website for Capibara’s “Fantino” single
 4. Run `bower install` to download all the front-end dependencies
 5. Build project assets running `gulp`
 6. Open watch server with run `gulp watch`
+7. Install [dploy](http://lucasmotta.github.io/dploy/)
+8. Run `dploy install`
 
 ## License
 
